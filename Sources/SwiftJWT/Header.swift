@@ -39,7 +39,7 @@ public struct Header: Codable {
     /// JSON Web Token Set URL Header Parameter
     public var jku : String?
     /// JSON Web Key Header Parameter
-    public var jwk: String?
+    public var jwk: Jwk?
     /// Key ID Header Parameter
     public var kid: String?
     /// X.509 URL Header Parameter
@@ -99,4 +99,11 @@ public struct Header: Codable {
         let data = try jsonEncoder.encode(self)
         return JWTEncoder.base64urlEncodedString(data: data)
     }
+ 
+  public struct Jwk: Codable {
+    public let kty: String
+    public let crv: String
+    public let x: String
+    public let y: String
+ }
 }
