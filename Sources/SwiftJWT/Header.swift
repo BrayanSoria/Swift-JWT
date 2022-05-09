@@ -106,4 +106,12 @@ public struct Jwk: Codable {
     public let crv: String
     public let x: String
     public let y: String
+ 
+    public init (kty: String? = nil, crv: String? = nil, x: String? = nil, y: String? = nil){
+     self.kty = kty
+     self.crv = crv
+     self.x = x
+     self.y = y
+    }
+ 
 }
