@@ -99,11 +99,11 @@ public struct Header: Codable {
         let data = try jsonEncoder.encode(self)
         return JWTEncoder.base64urlEncodedString(data: data)
     }
- 
-  public struct Jwk: Codable {
+}
+
+public struct Jwk: Codable {
     public let kty: String
     public let crv: String
     public let x: String
     public let y: String
- }
 }
