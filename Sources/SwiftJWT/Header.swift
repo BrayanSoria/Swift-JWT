@@ -71,7 +71,7 @@ public struct Header: Codable {
     public init(
         typ: String? = "JWT",
         jku: String? = nil,
-        jwk: String? = nil,
+        jwk: Jwk? = nil,
         kid: String? = nil,
         x5u: String? = nil,
         x5c: [String]? = nil,
