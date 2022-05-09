@@ -102,10 +102,10 @@ public struct Header: Codable {
 }
 
 public struct Jwk: Codable {
-    public let kty: String
-    public let crv: String
-    public let x: String
-    public let y: String
+    public let kty: String?
+    public let crv: String?
+    public let x: String?
+    public let y: String?
  
     public init (kty: String? = nil, crv: String? = nil, x: String? = nil, y: String? = nil){
      self.kty = kty
