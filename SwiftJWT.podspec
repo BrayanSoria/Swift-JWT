@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.dependency 'BlueRSA', '~> 1.0.200'
   s.dependency 'BlueECC', '~> 1.1.0'
   s.dependency 'LoggerAPI', '~> 1.7.0'
-  s.dependency 'KituraContracts', '~> 1.2.200'
+  s.dependency 'KituraContracts', '~> 2.0.0'
   s.dependency 'BlueCryptor', '~> 2.0.1'
 end
